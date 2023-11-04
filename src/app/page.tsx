@@ -1,12 +1,10 @@
-import { useRouter } from "next/navigation"
+import Link from "next/link"
 
 export default function Page() {
-    const router = useRouter()
-
     return (
         <main className="flex flex-col justify-center items-center min-h-screen">
             <h1>Hello, Next.js!</h1>
-            <button className="btn" onClick={() => router.push('/login')}>Go to Login</button>
+            <button className="btn"><Link href={`/login`}>Go to Login</Link></button>
         </main>
     )
 }

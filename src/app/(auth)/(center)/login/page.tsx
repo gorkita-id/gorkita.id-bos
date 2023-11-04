@@ -1,9 +1,10 @@
+"use client"
 import { useFormik } from "formik"
 import * as yup from 'yup';
-import TextInput from "@/components/textinput"
-import Button from "@/components/button";
+import TextInput from "@/elements/textinput"
+import Button from "@/elements/button";
 import Image from "next/image";
-import Checkbox from "@/components/checkbox";
+import Checkbox from "@/elements/checkbox";
 
 const validationSchema = yup.object().shape({
     email: yup.string().email('Invalid email').required('Email is required'),
@@ -79,6 +80,8 @@ const Login = () => {
                     alt="background-side"
                     fill
                     className="object-cover relative"
+                    sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
+                    priority
                 />
             </div>
         </main>
