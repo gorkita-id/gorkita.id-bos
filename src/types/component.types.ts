@@ -14,3 +14,10 @@ export interface ButtonPropsType {
     type: "button" | "submit" | "reset";
     className?: string;
 }
+
+export interface CheckboxPropsType {
+    name: string;
+    label: string;
+    onChange: any; 
+    checked: boolean;
+}

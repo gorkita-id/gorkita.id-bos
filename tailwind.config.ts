@@ -6,6 +6,22 @@ const config: Config = {
     './src/components/**/*.{js,ts,jsx,tsx,mdx}',
     './src/app/**/*.{js,ts,jsx,tsx,mdx}',
   ],
+  daisyui: {
+    themes: [
+      {
+        hopetheme: {
+          "primary": "#3A57E8",
+          "secondary": "#6C757D",
+          "success": "#1AA053",
+          "danger": "#C03221",
+          "warning": "#F16A1B",
+          "info": "#079AA2",
+          "light": "#DEE2E6",
+          "dark": "#212529"
+        }
+      }
+    ]
+  },
   theme: {
     extend: {
       backgroundImage: {

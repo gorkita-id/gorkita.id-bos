@@ -5,7 +5,7 @@ const Button: React.FC<ButtonPropsType> = ({ label, onClick, type, className }) 
     return <button 
         onClick={onClick} 
         type={type}
-        className={`btn btn-primary ${className && className}`}
+        className={`btn btn-primary w-full ${className && className}`}
     >{label}</button>
 }
 

@@ -19,7 +19,7 @@ const TextInput: React.FC<TextInputPropsType> = ({ name, label, type, onChange, 
                 onChange={onChange}
                 onBlur={onBlur}
                 value={value}
-                className={`input input-bordered input-info w-full max-w-xs bg-white ${ className && className }`}
+                className={`input input-bordered input-primary w-full bg-white ${ className && className }`}
             />
         </div>
     )
