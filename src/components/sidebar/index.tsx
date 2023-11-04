@@ -59,7 +59,7 @@ const Sidebar: React.FC = () => {
                 {
                     menus.map((menu, i) => (
                         <li key={i} className="">
-                            <Link href={menu.route}>
+                            <Link href={`/dashboard/${menu.route}`}>
                                 {menu.icon}
                                 {menu.title}
                             </Link>
